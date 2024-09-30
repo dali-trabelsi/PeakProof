@@ -1,14 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:focusable="true"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:clickable="true"
-    android:padding="26dp">
+    android:layout_height="match_parent">
 
+    <!-- Disabled Background (Initially Visible) -->
+    <ImageView
+        android:id="@+id/disabledBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/disabled" />
 
+    <!-- Enabled Background (Initially Invisible) -->
+    <ImageView
+        android:id="@+id/enabledBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"  android:padding="34dp"
+        android:src="@drawable/enabled"
+        android:visibility="invisible" />
 
-</LinearLayout>
+</FrameLayout>
