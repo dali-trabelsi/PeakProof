@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"> <!-- Transparent background -->
+
+    <!-- Left Edge Handle -->
+    <View
+        android:id="@+id/handle_left"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/holo_blue_dark" />
+
+    <!-- Right Edge Handle -->
+    <View
+        android:id="@+id/handle_right"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@android:color/holo_blue_dark" />
+
+    <!-- Top Edge Handle -->
+    <View
+        android:id="@+id/handle_top"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_gravity="top"
+        android:background="@android:color/holo_blue_dark" />
+
+    <!-- Bottom Edge Handle -->
+    <View
+        android:id="@+id/handle_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/holo_blue_dark" />
+
+    <!-- Central Transparent Click-Through Area -->
+<!-- Transparent and Click-Through -->
+</FrameLayout>
